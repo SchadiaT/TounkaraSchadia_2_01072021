@@ -25,6 +25,7 @@
  nav {
      display: flex;
      flex-direction: row;
+     grid-area: nav;
  }
  ul{
      display: flex;
@@ -393,6 +394,13 @@ img.activity2{
     }
     main {
         flex-direction: column-reverse;
+    }
+    header .top{
+        display: grid;
+        grid-template-areas: "img inscription" "nav nav";
+    }
+    .nav_links {
+        width: 100%;
     }
     .city_housing {
         width: auto;
