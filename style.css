@@ -48,7 +48,6 @@
  
 .search_bar {
     display: flex;
-    flex-wrap: wrap
 }
  input, label {
      font-size: 20px;
@@ -60,6 +59,8 @@
      border: #F2F2F2 1px solid;
      outline: none;
      padding: 4px;
+     width: 100%;
+     max-width: 400px;
  }
  input[type="submit"]
  {
@@ -369,14 +370,23 @@ img.activity2{
     header .top {
 
     }
-    nav {
-
+    img {
+        width: 50%;
+    }
+    .nav_links li {
+        padding: 20px;
+        width: 50%;
+        margin: 0;
+    }
+    nav ul li {
+        color: black;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        display: flex;
+        justify-content: center;
     }
     .inscription {
 
-    }
-    .search_bar {
-        width: 100%;
     }
     input[value="Rechercher"]
     {
@@ -431,11 +441,12 @@ img.activity2{
 
     }
     .activity_article {
-        flex-direction: column;
+ 
     }
     .activity_box {
     }
     .activity_second_box {
+       
     }
 }
 
@@ -473,15 +484,20 @@ img.activity2{
         margin: 0;
     }
     .activity_article {
-        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .activity_box  {
+        width: 30%;
     }
-    .activity_article .activity_second_box {
-
+    .activity_second_box {
+        flex-direction: row;
+        width: 67.6%;
     }
     .activity_column_box {
+        width: 50%;
     }
+
     footer {
         flex-direction: row;
         padding: 10px;
