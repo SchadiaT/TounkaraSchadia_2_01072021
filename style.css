@@ -84,6 +84,12 @@
  input[type="submit"]:hover{
      background: #DEEBFF;
  }
+ .research_bar{
+     padding: 10px;
+ }
+ .research_bar p {
+     padding: 5px 5px 20px 5px;
+ }
  i.fa-search {
      display: none;
      background-color: #0065FC;
@@ -91,6 +97,7 @@
      border-radius: 15%;
      padding: 10px;
  }
+
 
 
  .Filter {
