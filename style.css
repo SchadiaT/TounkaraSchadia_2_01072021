@@ -381,8 +381,10 @@ img.activity2{
 /*media queries*/
 
 @media all and (max-width: 500px) {
-    header .top {
-
+    header {
+        display: grid;
+        grid-template-areas: "logo inscription" "nav nav";
+        padding: 5px 0 20px 0;
     }
     img {
         width: 50%;
