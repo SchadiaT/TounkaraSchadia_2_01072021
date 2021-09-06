@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="fr">
     <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./style.css">
       <script src="https://kit.fontawesome.com/f09ae5faaa.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+      <title>Réservia</title> 
     </head>
       
     <body>
-  <header class="header">
-    <section class="top">
+      <header>
         <img src="images/logo/Reservia@3x.png" alt="Reservia" />  
-     <nav>
-       <ul class="nav_links">
-        <li>Hébergement</li>
-        <li>Activité</li> 
-       </ul>
-     </nav>
-     <p class="inscription">S'inscrire</p>
-    </section>
+       <nav>
+        <ul class="nav_links">
+         <li>Hébergement</li>
+         <li>Activité</li> 
+        </ul>
+       </nav>
+       <p class="inscription">S'inscrire</p>
+      </header>
 
-    <section class="bottom">
-      <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-      <p>En plein centre ville ou en pleine nature</p>
-     <div class="search_bar">
-        <label for="city"><i class="fas fa-map-marker-alt"></i></label>
-        <input type="text" list="cities">
-        <input type="submit" value="Rechercher">
-        <i class="fas fa-search"></i> 
-     </div> 
-    </section>
-
-  </header>
+      <section class="research_bar">
+       <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+       <p>En plein centre ville ou en pleine nature</p>
+        <div class="search_bar">
+         <div class="maps_bar">
+           <i class="fas fa-map-marker-alt"></i>
+         </div>
+         <input type="text">
+         <input type="submit" value="Rechercher">
+         <i class="fas fa-search"></i> 
+        </div> 
+      </section>
+    
    <section class="Filter">
-     <h3>Filtre</h3>
+     <div class="filter_selection">
+     <h3 class="selection_button">Filtre</h3>
      <ul class="filtre">
        <li>
          <div class="icon">
@@ -62,13 +66,12 @@
          <h3>Animaux autorisés</h3>
        </li>
      </ul>
+     </div>
+     <div class="information">
+       <i class="fas fa-info-circle"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p>
+     </div>
    </section>
       
-   
-
-   <section class="info">
-    <i class="fas fa-info-circle"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p>
-  </section>
 
    <main>
      <section class="city_housing">  
