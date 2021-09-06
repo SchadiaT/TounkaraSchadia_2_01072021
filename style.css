@@ -464,6 +464,7 @@ img.activity2{
 @media all and (min-width:501px) and (max-width: 1070px) {
     body {
         width: 95%;
+        margin: auto;
     }
     main {
         flex-direction: column;
