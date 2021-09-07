@@ -20,7 +20,7 @@
  }
  .inscription {
      color: #0065FC;
-
+     font-weight: bolder;
  }
  nav {
      display: flex;
@@ -136,13 +136,13 @@
      left: -2px;
      background-color: #DEEBFF;
  }
- li .icon:hover {
+ .selection .icon:hover {
      background-color: #0065FC;
  }
- li .button:hover {
+ .selection .button:hover {
      color: white;
  }
- li:hover .icon .button{
+ .selection:hover .icon .button{
     animation: ro 2s linear infinite;
 }
  li h3 {
@@ -152,7 +152,7 @@
  li {
      transition: all 0.6s;
  }
- li:hover {
+ .selection:hover {
      background-color: #DEEBFF;
      color: #0065FC;
  }
