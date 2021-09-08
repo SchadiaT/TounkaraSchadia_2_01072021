@@ -4,7 +4,7 @@
      padding: 0;
  }
 
- 
+
  header {
      display: flex;
      justify-content: flex-end;
@@ -49,7 +49,7 @@
     display: flex;
 }
  input, .maps_bar {
-     font-size: 20px;
+     font-weight: bolder;
      box-sizing: border-box;
      transition: .5s;
  }
@@ -63,20 +63,21 @@
  }
  input[type="submit"]
  {
-     border-radius: 0 20px 20px 0;
+     border-radius: 0 20% 20% 0;
      border: none;
      outline: none;
      cursor: pointer;
      background: #0065FC;
      color: white;
-     padding: 5px;
+     padding: 15px;
  }
- .fa-map-marker-alt{
-     border-radius: 15% 0 0 15%;
+ .fas.fa-map-marker-alt{
+     border-radius: 25% 0 0 25%;
      border: none;
      outline: none;
      background: #F2F2F2;
-     padding: 8px;
+     padding: 17px;
+     color: black;
  }
  input[type="submit"]:hover{
      background: #DEEBFF;
@@ -213,7 +214,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 2px;
+    padding: 4px;
     padding-bottom: 40px;
     margin: 10px;
     border-radius: 15px;
@@ -260,7 +261,7 @@ img.popular {
 .popularity_box {
     display: flex;
     margin: 15px;
-    padding: 2px;
+    padding: 4px;
     border-radius: 20px;
     width: 90%;
     height: 20%;
@@ -277,7 +278,7 @@ img.popular {
 .chart{
     display: flex;
 }
-.arrow {
+ i.arrow.fas {
    font-size: 22px;
    color: black;
    padding-left: 40px;
@@ -294,7 +295,9 @@ img.popular {
     bottom: 6%;
 }
 
-
+ .activity_title {
+    margin: 2% 0 0 4%;
+ }
  .activity_article {
      display: flex;
      flex-direction: row;
