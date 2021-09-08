@@ -73,13 +73,11 @@
      padding: 5px;
  }
  .fa-map-marker-alt{
-     position: relative;
-     right: -5px;
-     border-radius: 20px 0 0 20px;
+     border-radius: 15% 0 0 15%;
      border: none;
      outline: none;
      background: #F2F2F2;
-     padding: 7px;
+     padding: 8px;
  }
  input[type="submit"]:hover{
      background: #DEEBFF;
@@ -94,7 +92,7 @@
      display: none;
      background-color: #0065FC;
      color: white;
-     border-radius: 15%;
+     border-radius: 0 15% 15% 0;
      padding: 10px;
  }
 
@@ -136,10 +134,10 @@
      left: -2px;
      background-color: #DEEBFF;
  }
- .selection .icon:hover {
+ .selection:hover .icon {
      background-color: #0065FC;
  }
- .selection .button:hover {
+ .selection:hover .button {
      color: white;
  }
  .selection:hover .icon .button{
@@ -216,7 +214,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 5px;
+    padding: 2px;
     padding-bottom: 40px;
     margin: 10px;
     border-radius: 15px;
@@ -263,7 +261,7 @@ img.popular {
 .popularity_box {
     display: flex;
     margin: 15px;
-    padding: 5px;
+    padding: 2px;
     border-radius: 20px;
     width: 90%;
     height: 20%;
@@ -280,12 +278,11 @@ img.popular {
 .chart{
     display: flex;
 }
-.fa-chart-line{
-   display: flex;
-   flex-direction: row;
+.arrow {
    font-size: 22px;
    color: black;
    padding-left: 40px;
+   padding-top: 4px;
 }  
 
 .title{
@@ -385,6 +382,7 @@ img.activity2{
         display: grid;
         grid-template-areas: "logo inscription" "nav nav";
         padding: 5px 0 20px 0;
+        margin: 10px;
     }
     img {
         width: 50%;
@@ -401,9 +399,12 @@ img.activity2{
         display: flex;
         justify-content: center;
     }
-    .inscription {
-
+    .nav_links li:hover {
+        color: #0065FC;
+        border-bottom: 1px solid #0065FC;
+        border-top: white;
     }
+   
     input[value="Rechercher"]
     {
         display: none;
@@ -415,10 +416,8 @@ img.activity2{
         flex-direction: column;
         align-items: baseline;
     } 
-    .filtre {
-
-    }
-    main {
+    
+    main{
         flex-direction: column-reverse;
     }
     header .top{
@@ -432,10 +431,8 @@ img.activity2{
         width: auto;
         background-color: white;
     }
-    .housing_room{
 
-    }
-    .room_box{
+    .room_box {
         width: 100%;
     }
     img.room {
@@ -443,21 +440,30 @@ img.activity2{
     }
     .popular_housing {
         width: auto;
+        margin: 0;
+        border-radius: 0;
     }
     .popular_housing_room {
         height: auto;
     }
     img.popular {
-        
+        width: 100%;
     }
     .popularity_box{
         height: 30%;
     }
     .popular_description {
-
+        width: 100%;
     }
     .activity_article {
         flex-direction: column;
+    }
+    .activity_box {
+        height: 300px;
+        width: auto;
+    }
+    .activity_column_box {
+        height: 300px;
     }
 }
 
@@ -479,8 +485,7 @@ img.activity2{
     .room_box {
         width: auto;
     }
-    img.room {
-    }
+
     .popular_housing {
         width: 100%;
     }
