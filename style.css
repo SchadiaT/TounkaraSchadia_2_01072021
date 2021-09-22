@@ -4,18 +4,18 @@
      padding: 0;
  }
 
-
+ body {
+     padding: 0 3% 0 3%;
+ }
  header {
      display: flex;
      justify-content: flex-end;
      align-items: center;
-     padding: 0 10px 10px 10px;
-
  }
  
- img{
+ .logo{
      width: 15%;
-     margin-right: auto;
+     padding-right: 60%;
  }
  .inscription {
      color: #0065FC;
@@ -101,7 +101,6 @@
  .Filter {
      display: flex;
      flex-direction: column;
-     padding: 10px;
      margin: 10px;
      align-items: baseline;
  }
@@ -172,111 +171,93 @@
      margin-right: 5px;
  }
  
-
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
 main{
     display: flex;
+    gap: 2rem;
  }
  .title {
-     padding: 15px 0 15px 0;
+     padding: 15px 0 15px 15px;
  }
  .room_box_title {
      padding-bottom: 5px;
  }
- .city_housing{
-     display: flex;
-     width: 70%;
-     margin: 15px;
-     padding: 15px;
-     justify-content: space-around; 
+ .city_housing{ 
      border-radius: 5%; 
      background: #F2F2F2; 
-     flex-wrap: wrap;
  }
  .housing_room {
      display: flex;
-     flex-direction: row;
      justify-content: center;
      flex-wrap: wrap;
+     gap: 1rem;
  }
+
  .room{
-    width: 300px;
-    height: 200px;
-    object-fit: contain;
- }
- img.room{
-    width: 250px;
-    height: 150px;
+    height: 60%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0 ;
-    padding-bottom: 10px;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
 }
  .room_box{
     display: flex;
     flex-direction: column;
-    position: relative;
     padding: 4px;
-    padding-bottom: 40px;
-    margin: 10px;
     border-radius: 15px;
-    object-fit: cover;
     background: white;
-    box-shadow: 0 0 2em gray;
+    box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
     transition: 1s;
+    width: 30%;
+    cursor: pointer;
+    height: 200px;
 }
  .room_box:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
  .housing_element {
-     padding: 15px 60% 15px 0;
+     padding: 4%;
  }
 
  .popular_housing {
-     display: flex;
-     width: 30%;
-     margin: 15px;
-     padding: 15px;
-     justify-content: space-around;
      border-radius: 5%;
      background: #F2F2F2;
      flex-wrap: wrap;
- }
- .popular_housing_room {
      height: 100%;
- }
- .popularity_title {
-     padding-bottom: 10px;
  }
  .popular {
     display: flex;
-    width: 200px;
-    height: 200px;
- }
-img.popular {
-    height: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
-    padding-right: 10px;
-    margin: 0;
-}
+ }
 .popularity_box {
     display: flex;
     margin: 15px;
     padding: 4px;
     border-radius: 20px;
-    width: 90%;
-    height: 20%;
     background: white; 
-    box-shadow: 0 0 2em gray;
+    box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
     transition: 1s;
+    cursor: pointer;
 }
 .popularity_box:hover{
     transform: scale(1.1);
 }
 .popular_description{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 7px;
 }
 .chart{
     display: flex;
+    justify-content: space-between;
+    margin: 5%;
 }
  i.arrow.fas {
    font-size: 22px;
@@ -284,56 +265,53 @@ img.popular {
    padding-left: 40px;
    padding-top: 4px;
 }  
-
-.title{
-    text-align: left;
-    bottom: 2px;
+.grey.fas{
+    color: lightgrey;
 }
 
-.rating_star{
-    position: absolute;
-    bottom: 6%;
-}
 
  .activity_title {
-    margin: 2% 0 0 4%;
+    margin: 3% 2% 2% 1%;
  }
  .activity_article {
      display: flex;
-     flex-direction: row;
-     margin: 15px;
-     padding: 15px;
+     width: 100%;
+     justify-content: space-between;
+     height: 550px;
+     margin-bottom: 4%;
  }
  .activity_box{
      display: flex;
      flex-direction: column;
-     margin: 10px;
-     padding: 0 0 10px 0;
      border-radius: 5%;
-     background: white;
-     object-fit: cover;
-     box-shadow: 0 0 1em gray;
-     width: 90%;
+     box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
+     width: 23%;
+     height: 100%;
      transition: 1s;
+     cursor: pointer;
  }
+.activity_box_secondary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    height: 100%;
+}
  .activity_box:hover{
-     transform: scale(1.1);
+     transform: scale(1.);
  }
- .activity_second_box{
+ .activity_box_row1{
     display: flex;
     flex-direction: column;
  }
  .activity_column_box{
      display: flex;
      flex-direction: column;
-     height: 50%;
-     margin: 10px;
-     padding: 0 0 10px 0;
      border-radius: 5%;
-     background: white;
-     object-fit: cover;
-     box-shadow: 0 0 1em gray;
+     justify-content: space-between;
+     box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
      transition: 1s;
+     cursor: pointer;
  }
  .activity_column_box:hover{
      transform: scale(1.1);
@@ -342,13 +320,17 @@ img.popular {
  img.activity{
      justify-content: space-around;
      height: 90%;
-     width: 100%;
      border-radius: 10px 10px 0 0;
      object-fit: cover;
  }
-img.activity2{
-    flex-direction: row;
-    height: 90%;
+img.activity1{
+    height: 250px;
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+    object-fit: cover;
+}
+.activity2 {
+    height: 150px;
     width: 100%;
     border-radius: 5% 5% 0 0;
     object-fit: cover;
@@ -363,6 +345,7 @@ img.activity2{
      flex-wrap: wrap;
      background: #F2F2F2;
      padding: 20px 30% 20px 20px;
+     margin: unset;
  }
 
  .inner_footer{
@@ -418,6 +401,9 @@ img.activity2{
         flex-direction: column;
         align-items: baseline;
     } 
+    .filter_selection {
+        flex-direction: column;
+    }
     
     main{
         flex-direction: column-reverse;
@@ -459,13 +445,28 @@ img.activity2{
     }
     .activity_article {
         flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
     }
     .activity_box {
-        height: 300px;
-        width: auto;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 15%;
+    }
+    .activity_box_secondary {
+        width: 100%;
     }
     .activity_column_box {
-        height: 300px;
+        margin-bottom: 15%;
+    }
+    img.activity {
+        width: 100%;
+    }
+    img.activity1 {
+        height: 200px;
+    }
+    img.activity2 {
+        height: 200px;
     }
 }
 
@@ -484,9 +485,6 @@ img.activity2{
     .housing_room {
         width: 100%;
     }
-    .room_box {
-        width: auto;
-    }
 
     .popular_housing {
         width: 100%;
@@ -504,12 +502,17 @@ img.activity2{
     }
     .activity_article {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        height: 100%;
     }
     .activity_box  {
-        width: 30%;
+        width: 47%;
+        margin-bottom: 30px;
+    }
+    .activity_box_secondary {
+        width: 47%;
+        display: flex;
     }
     .activity_second_box {
         flex-direction: row;
@@ -517,7 +520,7 @@ img.activity2{
     }
     .activity_column_box {
         width: 100%;
-        height: 200px;
+        margin-bottom: 30px;
     }
 
 
