@@ -4,17 +4,15 @@
      padding: 0;
  }
 
- body {
-     padding: 0 3% 0 3%;
- }
  header {
+     padding: 0 3% 0 3%;
      display: flex;
      justify-content: flex-end;
      align-items: center;
  }
  
  .logo{
-     width: 100%;
+     width: 60%;
      padding-right: 50%;
  }
  .inscription {
@@ -45,6 +43,9 @@
     border-top: 1px solid #0065FC;
 }
  
+.research_bar {
+    padding: 0 3% 0 3%;
+}
 .search_bar {
     display: flex;
 }
@@ -82,9 +83,7 @@
  input[type="submit"]:hover{
      background: #DEEBFF;
  }
- .research_bar{
-     padding: 10px;
- }
+
  .research_bar p {
      padding: 5px 5px 20px 5px;
  }
@@ -99,6 +98,7 @@
 
 
  .Filter {
+    padding: 0 3% 0 3%;
      display: flex;
      flex-direction: column;
      margin: 10px;
@@ -183,6 +183,7 @@
      color: black;
  }
 main{
+    padding: 0 3% 0 3%;
     display: flex;
     gap: 2rem;
  }
@@ -275,7 +276,9 @@ main{
     color: lightgrey;
 }
 
-
+.article {
+    padding: 0 3% 0 3%;
+}
  .activity_title {
     margin: 3% 2% 2% 1%;
  }
@@ -340,6 +343,9 @@ img.activity1{
     width: 100%;
     border-radius: 5% 5% 0 0;
     object-fit: cover;
+}
+.element_title {
+    padding: 10px;
 }
 .fas, .far{
     color: #0065FC;
